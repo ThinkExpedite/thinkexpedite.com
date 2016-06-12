@@ -8,7 +8,10 @@ Thinkexpedite has created a very simple bootstrap static site site that is deplo
 
 Thinkexpedite uses a number of open source projects to work properly:
 
-* [node.js] - deployment to S3 bucket 
+* [node.js] - deployment to S3 bucket
+* [bootstrapcss] - HTML, CSS, and JS framework for developing responsive, mobile first projects
+* [font-awesome] - CSS Font-awesome - scalable vector icons Toolkit
+* [animatecss] - CSS animations
 
 And of course Thinkexpedite itself is open source with a [public repository][Thinkexpedite]
  on GitHub.
@@ -37,6 +40,15 @@ aws.config.credentials = new aws.SharedIniFileCredentials({ profile: 'default' }
 
 * Option 2
 * Load credentials directly into an AWSConfig.json file in the project making sure NOT to deploy these credentials for others to access i.e.
+
+```json
+{
+  "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+  "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+  "region": "us-west-2"
+}
+```
+
 ``` javascript
 aws.config.loadFromPath('./AwsConfig.json');
 ```
@@ -46,6 +58,14 @@ You need aws-sdk & NodeJS installed globally:
 ```sh
 $ npm install
 ```
+
+In order to deploy contents to S3 bucket there are a few options avai lable:
+* all - will deploy index.htm | Javascript files | CSS files | Images
+* js - will deploy just Javascript files only
+* createBucket - simply create S3 bucket called Thinkexpedite.com
+* CSS - create all CSS files only
+* Images - all resource images only
+* index - just update copy within Index.html
 
 ```sh
 $ git clone [git-repo-url] thinkexpedite.com
@@ -65,4 +85,7 @@ MIT
 
    [Thinkexpedite]: <https://github.com/thinexpedite>
    [node.js]: <http://nodejs.org>
+   [bootstrapcss]: <http://getbootstrap.com/>
+   [font-awesome]: <http://fontawesome.io/>
+   [animatecss]: <http://daneden.github.io/animate.css/>
   

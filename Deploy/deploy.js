@@ -47,6 +47,7 @@ function uploadIndex() {
   uploadFile('index.html', '../index.html');
 }
 
+
 function uploadjs() {
   var CODE_PATH = 'resources/js/';
   var fileList = getFileList('../' + CODE_PATH);
