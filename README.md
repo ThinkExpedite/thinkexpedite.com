@@ -20,7 +20,7 @@ And of course Thinkexpedite itself is open source with a [public repository][Thi
 
 Thinkexpedite requires [Node.js](https://nodejs.org/) v4+ to deploy.
 
-Once an AWS account has been created the credentials to deploy to an S3 bucket need to be utilised correctly. There are 2 options that can be used to utilise the necessary credentials.
+Once an AWS account has been created the credentials to deploy to an S3 bucket need to be utilised correctly. There are 2 options that can be used to utilise the necessary credentials.ĥ
 
 * Option 1
     * Save AWS credentials to %USER_PROFILE% \ .aws\credentials file 
@@ -43,8 +43,8 @@ aws.config.credentials = new aws.SharedIniFileCredentials({ profile: 'default' }
 
 ```json
 {
-  "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
-  "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+  "accessKeyId": "EXAMPLE",
+  "secretAccessKey: "EXAMPLEKEY",
   "region": "us-west-2"
 }
 ```
