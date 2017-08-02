@@ -39,13 +39,17 @@
                 <div class="row-fluid">
                         <button type="submit">Submit</button>
                 </div>
+                <div class="row-fluid">
+                    <div id="message" style="display: none;">Form submmitted</div>
+                    <div id="errormessage" style="display: none;">Error with form submission</div>
+                </div>
             </form>
         </div>
 </body>
 </html>
 
 <script type="text/javascript" charset="utf-8">
-    var URL = 'https://v1ijjegv0g.execute-api.eu-west-1.amazonaws.com/production/contact'
+    var URL = 'https://*********.execute-api.eu-west-1.amazonaws.com/********/contact'
     
     $('#contact-form').submit(function (event) {
     event.preventDefault()
@@ -59,14 +63,17 @@
     $.ajax({
         type: 'POST',
         url: URL,
+        headers: { 'x-api-key': '*****************************' },
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(data),
         success: function () {
-        // clear form and show a success message
+            $("#message").show();
+            $('#contact-form').trigger("reset");
         },
         error: function () {
-        // show an error message
+            $("#errormessage").show();
+            $('#contact-form').trigger("reset");
         }
     })
     })
