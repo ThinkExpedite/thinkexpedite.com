@@ -23,7 +23,7 @@ function noParamsGiven() {
 
 function runAll()
 {
-    uploadIndex();
+    uploadHtmlPages();
     uploadjs();
     uploadCss();
     uploadImages();
@@ -34,7 +34,7 @@ function runAll()
 function runWithParams() {
   console.log('S3 Deployer ... running option is [' + process.argv[2] + ']');
 
-  if (process.argv[2] === 'index') uploadIndex();
+  if (process.argv[2] === 'html') uploadHtmlPages();
   else if (process.argv[2] === 'js') uploadjs();
   else if (process.argv[2] === 'createBucket') createBucket(BUCKET_NAME);
   else if (process.argv[2] === 'css') uploadCss();
@@ -43,8 +43,9 @@ function runWithParams() {
   else console.log('...that option isn\'t recognized');
 }
 
-function uploadIndex() {
+function uploadHtmlPages() {
   uploadFile('index.html', '../index.html');
+   uploadFile('form.html', '../form.html');
 }
 
 
