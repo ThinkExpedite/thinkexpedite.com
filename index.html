@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+   <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+   <!-- <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -25,6 +26,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="resources/css/creative.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/canvas.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +50,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="resources/img/Logo.png" alt="Think Expedite"></a>
+                    <h2 class="logotext">&lt; expedite /&gt;</h2>
+                   <!-- <img src="resources/img/Logo.png" alt="Think Expedite">-->
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,24 +79,23 @@
 
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Think Expedite</h1>
-                <hr>
-                <p>Full-stack software development specialist in cloud/web technologies</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">find out more</a>
-            </div>
+            <canvas></canvas>
         </div>
     </header>
 
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Expedite Ltd</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        Expedite Ltd are a software development consultancy based in Bristol, UK. 
-                        The company was founded in 2007 by Jon Reynolds.
+                <div class="col-lg-12 text-center">
+
+                    <h2 class="section-heading">Think Expedite</h2>
+                    <p class="text-faded jonbo">
+                        Expedite are a software development company based near Bristol, UK offering full-stack development services.
+                        The company has been working with a a multitide of clients from all business sectors including global brands like Dyson and JustEat.
+                        In the last 3 years the company has particularly focused on helping clients build microservice and serverless cloud architectures to manage
+                        large scale web traffic and IoT connectivity to connected consumer devices. The company was founded by Jon Reynolds in 2007. 
+                        After reading a PhD in Biochemistry at the University of Bristol in 2000, Jon re-trained in web development from the ground up and now 
+                        proactively enjoys working with clients to delivering solutions that meet their financial needs and expectations.
                     </p>
                     <!--<a href="http://lmgtfy.com/?q=bootstrap+template" target="_blank" class="btn btn-default btn-xl">External Link</a>-->
                 </div>
@@ -103,70 +106,39 @@
     <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Skills</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-6 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-cloud wow bounceIn text-primary"></i>
-                        <h3 class="aws">Cloud</h3>
-                            <ul>
+                        <i class="fa fa-4x wow bounceIn text-primary"></i>
+                        <div class="aws">AWS cloud Technologies</div>
+                            <ul> 
                                 <li>Design Patterns & Architecture</li>                                
                                 <li>Serverless - Lambda, API-Gateway</li>
                                 <li>IAAS - EC2, Cloudformation</li>
                                 <li>Messaging - SQS, SNS</li>
-                                <li>Storage - NoSQL (DynamoDB), RDS, S3, ElastiCache, Redshift</li>
-                                <li>Performance - Cloudfront, redis</li>
-                                <li>Continous Integration & Deployment</li>                                  
+                                <li>Storage - NoSQL (DynamoDB), RDS, MongoDB, S3, ElastiCache, Redshift</li>
+                                <li>Performance - Cloudfront, Elasticache</li>
+                                <li>Continous Integration & Deployment</li>     
+                                <li>Docker containerisation</li>    
+                                <li>Powershell scripting</li>                         
                             </ul>
                        
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-6 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-server wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3 class="net">.NET</h3>
+                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <div class="frontend">.NET and Frontend web development</div>
                           <ul>
+                                <li>ASP.NET Core</li>
                                 <li>ASP.NET MVC - Web/API</li>
-                                <li>Windows - WPF (XAML, MVVM), Services</li>
-                                <li>UnitTesting - XUnit, Moq, Autofixture</li>
-                                <li>BDD - Specflow</li>
-                                <li>CMS - EpiServer, Sitecore</li>                              
-                            </ul>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-html5 wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Client Web</h3>
-                       
-                             <ul >
-                                <li>Progressive Enhancement</li>
+                                <li>NodeJS, Express</li>
+                                <li>Testing strategies- XUnit, Moq, Autofixture,Specflow</li>
+                                <li>CMS Development in EpiServer & Sitecore</li>   
                                 <li>HTML5</li>
                                 <li>CSS (LESS/SASS)</li>
-                                <li>Javascript - JQuery, Angular</li>
-                                <li>Unit Testing</li>                                    
+                                <li>Javascript - JQuery, AngularJS</li>      
+                                <li>Gulp</li>                 
                             </ul>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-database wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Scripting</h3>
-                        
-                         <ul >
-                                <li>Node JS</li>
-                                <li>Powershell</li>
-                                <li>Gulp</li>                         
-                            </ul>
-                      
                     </div>
                 </div>
             </div>
@@ -178,7 +150,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Clients</h2>
-                    <hr class="primary">
+
                 </div>
             </div>
         </div>
@@ -245,37 +217,33 @@
         </div>
     </aside>
 -->
-    <section id="contact">
+    <section id="contact" class="bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Get in touch</h2>
-                    <hr class="primary">
+                    
                     <p>Whether you are fellow developer or are a client that requires consultancy feel free to contact by the channels below.</p>
                 </div>
                 <div class="col-lg-12 text-center">
-                     <div class="col-lg-3 text-center">
-                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                        <p><a href="tel:07779329061">+44 (0)777 932 9061</a></p>
-                    </div>
-                    <div class="col-lg-2 text-center">
+                    <div class="col-lg-3 text-center">
                         <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                         <p><a href="mailto:jon@thinkexpedite.com">info@thinkexpedite.com</a></p>
                     </div>
                 
-                    <div class="col-lg-2 text-center">
+                    <div class="col-lg-3 text-center">
                         <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".2s"></i>
                         <p><a href="http://www.linkedin.com/in/expedite">Expedite</a></p>
                         
                     </div>
                     
-                    <div class="col-lg-2 text-center">
+                    <div class="col-lg-3 text-center">
                         <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".2s"></i>
                         <p><a href="http://twitter.com/jonreynolds">jonreynolds</a></p>
                         
                     </div>
                     
-                    <div class="col-lg-2 text-center">
+                    <div class="col-lg-3 text-center">
                         <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".2s"></i>
                         <p><a href="https://github.com/thinkexpedite">thinkexpedite</a></p>
                         
@@ -300,6 +268,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="resources/js/creative.js"></script>
+    <script src="resources/js/canvas.js"></script>
+
 
 </body>
 
