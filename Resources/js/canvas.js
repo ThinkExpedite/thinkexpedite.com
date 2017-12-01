@@ -1,10 +1,10 @@
 var   canvas = document.querySelector('canvas'),
 ctx = canvas.getContext('2d'),
 particles = [],
-patriclesNum = 150,
+patriclesNum = 100,
   w = window.innerWidth,
   h = 400,
-colors = ['#000','#1fa67a','#5c6360', '#fff'];
+colors = ['#000','#1fa67a','#5c6360'];
 
 canvas.width = window.innerWidth;
 canvas.height = 400;
