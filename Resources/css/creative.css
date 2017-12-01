@@ -98,7 +98,7 @@ li {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #30AB00;
+    color: black;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -131,7 +131,7 @@ li {
     background-color: transparent;
 }
 
-@media(min-width:768px) {
+@media(min-width:100px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color:white;
@@ -253,6 +253,7 @@ header .header-content .header-content-inner p {
     margin: 50px auto 0;
     max-width: 400px;
     padding-bottom:  20px;
+    padding-left: 50px;
 }
 
 .service-box h3 {
@@ -267,6 +268,7 @@ header .header-content .header-content-inner p {
 @media(min-width:992px) {
     .service-box {
         margin: 20px auto 0;
+        padding-left: 50px;
     }
 }
 
@@ -559,17 +561,22 @@ body {
     background-color: black;
 }
 
+.affix-top .logotext {
+    color: white;
+}
+
 .logotext {
     font-size: 26px;
-    color: white;
     margin: 0;
     text-transform: lowercase;
 }
 
+.affix .logotext{
+    color: white;
+}
 .affix-top .logotext{
     color: black;
 }
-
 
 .blinking-cursor {
     font-weight: 100;
