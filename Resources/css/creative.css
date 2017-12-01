@@ -591,15 +591,16 @@ body {
 }
 .cursor	i {
 	position: absolute;
-	width: 8px;
+	width: 12px;
 	height: 80%;
-	background-color: black;
+	background-color: #1fa67a;
 	left: 130px;
 	top: 10%;
 	animation-name: blink;
 	animation-duration: 1000ms;
 	animation-iteration-count: infinite;
-	opacity: 1;
+    opacity: 1;
+    border-radius: 1px;
 }
 .cursor input:focus + i {
 	display: none;
