@@ -27,7 +27,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="resources/css/creative.css" type="text/css">
     <link rel="stylesheet" href="resources/css/canvas.css" type="text/css">
-    <link rel="shortcut icon" type='image/x-icon' href="/resources/img/favicon.png">
+    <!--<link rel="stylesheet" href="resources/css/maps.css" type="text/css">-->
+    <link rel="shortcut icon" type='image/x-icon' href="resources/img/favicon.png">
 </head>
 
 <body id="page-top">
@@ -242,6 +243,9 @@
                     <p>If you are a business requiring specialist skills in .NET or microservice technologies; or a business requiring web maintenance and hosting or a fellow techie looking to share knowledge and collaborate feel free to contact by the channels below.</p>
                 </div>
                 <div class="col-lg-12 text-center">
+                    <div id="map_canvas"></div>
+                </div>
+                <div class="col-lg-12 text-center">
                     <div class="col-lg-3 text-center">
                         <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                         <p><a href="mailto:jon@thinkexpedite.com">jon@thinkexpedite.com</a></p>
@@ -286,16 +290,19 @@
     <script src="resources/js/creative.js"></script>
     <script src="resources/js/canvas.js"></script>
 
+    <!--google maps-->
+   <!--
+    <script src="resources/js/maps.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtU_UkCE6liqJFPx_IAX06VFlrbex3r88&callback=initMap"></script>
+   -->
+    <script type="text/javascript" src='http://www.google-analytics.com/ga.js'></script>
 
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-28803224-1");
-    pageTracker._trackPageview();
-    } catch(err) {}
+        try {
+        var pageTracker = _gat._getTracker("UA-28803224-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+        
     </script>
 
 </body>
